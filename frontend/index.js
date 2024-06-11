@@ -9,12 +9,13 @@ function moduleProject1() {
   const body = document.querySelector("body");
   const section = body.querySelector("section");
   const sectionDiv = section.querySelectorAll("div");
-  sectionDiv.forEach((div) => (div.className = "widget"));
-  console.log(sectionDiv);
+  sectionDiv.forEach((div) => div.classList.add("widget"));
 
   // 👉 TASK 2 - Build a "Quote of the Day" widget
-  //  ✨ add your code here
+  const quoteDiv = document.createElement("div");
 
+  quoteDiv.textContent = quotes[Math.floor(Math.random() * 10)]["quote"];
+  document.querySelector(".quoteoftheday").appendChild(quoteDiv);
   // 👉 TASK 3 - Build a "Corporate Speak" widget
   //  ✨ add your code here
 
