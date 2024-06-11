@@ -1,12 +1,16 @@
 function moduleProject1() {
-  const footer = document.querySelector('footer')
-  const currentYear = new Date().getFullYear()
-  footer.textContent = `© BLOOM INSTITUTE OF TECHNOLOGY ${currentYear}`
+  const footer = document.querySelector("footer");
+  const currentYear = new Date().getFullYear();
+  footer.textContent = `© BLOOM INSTITUTE OF TECHNOLOGY ${currentYear}`;
 
   // 👇 WORK WORK BELOW THIS LINE 👇
 
   // 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
-  //  ✨ add your code here
+  const body = document.querySelector("body");
+  const section = body.querySelector("section");
+  const sectionDiv = section.querySelectorAll("div");
+  sectionDiv.forEach((div) => (div.className = "widget"));
+  console.log(sectionDiv);
 
   // 👉 TASK 2 - Build a "Quote of the Day" widget
   //  ✨ add your code here
@@ -29,5 +33,6 @@ function moduleProject1() {
 // ❗ DO NOT WORK BELOW THIS LINE
 // ❗ DO NOT WORK BELOW THIS LINE
 // ❗ DO NOT WORK BELOW THIS LINE
-if (typeof module !== 'undefined' && module.exports) module.exports = { moduleProject1 }
-else moduleProject1()
+if (typeof module !== "undefined" && module.exports)
+  module.exports = { moduleProject1 };
+else moduleProject1();
