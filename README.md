@@ -65,7 +65,7 @@ You can find a detailed mock [HERE](https://bloominstituteoftechnology.github.io
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
 
 Inside the section element of the `index.html` file, you will find four divs. Add a class name of "widget" to all of them. Remember, you're only allowed to change the `index.js` file.
 
@@ -88,7 +88,7 @@ You will know your code is working correctly because some CSS will kick in for t
 </section>
 ```
 
-  ---
+---
 
 </details>
 
@@ -97,7 +97,7 @@ You will know your code is working correctly because some CSS will kick in for t
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
 
 Start by console logging the variable `quotes` inside of `index.js`. You should see an array of quote objects printing to the console. Even though this variable is not declared anywhere inside the file, it is _defined_ because the `data.js` script loaded it into the global space shared by all scripts.
 
@@ -111,7 +111,10 @@ Use the random quote you selected to add to the quoteoftheday div the following 
 <!-- the actual text will change at every reload, depending on the quote -->
 <div class="quoteoftheday widget">
   <h3>Quote of the Day</h3>
-  <div>Optimism is an occupational hazard of programming: feedback is the treatment.</div>
+  <div>
+    Optimism is an occupational hazard of programming: feedback is the
+    treatment.
+  </div>
   <div>Kent Beck in 2003</div>
 </div>
 ```
@@ -123,7 +126,7 @@ Some quotes have a `null` date because it is unknown. In such cases, the div con
 <div>John Romero in an unknown date</div>
 ```
 
-  ---
+---
 
 </details>
 
@@ -132,7 +135,7 @@ Some quotes have a `null` date because it is unknown. In such cases, the div con
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
 
 Using random values from the arrays `adverbs`, `nouns`, and `verbs` contained in `data.js`, add to the DOM inside the corportatespeak div in the following format:
 
@@ -140,15 +143,23 @@ Using random values from the arrays `adverbs`, `nouns`, and `verbs` contained in
 <div class="corporatespeak widget">
   <h3>Corporate Speak</h3>
   <p>
-    We need to <!-- random verb --> our <!-- random noun --> <!-- random adverb -->
-    in order to <!-- random verb --> our <!-- random noun --> <!-- random adverb -->.
+    We need to
+    <!-- random verb -->
+    our
+    <!-- random noun -->
+    <!-- random adverb -->
+    in order to
+    <!-- random verb -->
+    our
+    <!-- random noun -->
+    <!-- random adverb -->.
   </p>
 </div>
 ```
 
 The text should change at each page load/refresh.
 
-  ---
+---
 
 </details>
 
@@ -157,15 +168,16 @@ The text should change at each page load/refresh.
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
+
 This widget will contain text that will countdown to liftoff. Each second, the widget's text will change to show the following:
 
 - The widget will display "T-minus 5..." on page load.
-- 1000 milliseconds later, it should display  "T-minus 4..."
-- 1000 milliseconds later, it should display  "T-minus 3..."
-- 1000 milliseconds later, it should display  "T-minus 2..."
-- 1000 milliseconds later, it should display  "T-minus 1..."
-- 1000 milliseconds later, it should display  "Liftoff! 🚀"
+- 1000 milliseconds later, it should display "T-minus 4..."
+- 1000 milliseconds later, it should display "T-minus 3..."
+- 1000 milliseconds later, it should display "T-minus 2..."
+- 1000 milliseconds later, it should display "T-minus 1..."
+- 1000 milliseconds later, it should display "Liftoff! 🚀"
 
 You will need `setInterval` and optionally `clearInterval` (research this!). The countdown div in the DOM after 3000 milliseconds should look like so:
 
@@ -176,7 +188,7 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
 </div>
 ```
 
-  ---
+---
 
 </details>
 
@@ -185,7 +197,8 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
+
 This widget will show a random person from the `people` array along with some data related to the person.
 
 Start by selecting a random person from the `people` array in `data.js` using `Math.random`.
@@ -197,7 +210,10 @@ Use the random person to construct the inside of the friends div in the followin
 ```html
 <div class="friends widget">
   <h3>Friends</h3>
-  <p>Michael Chen was born in 1995 and is friends with Carlos Garcia, Mohammed Ali and Jason Wong.</p>
+  <p>
+    Michael Chen was born in 1995 and is friends with Carlos Garcia, Mohammed
+    Ali and Jason Wong.
+  </p>
 </div>
 ```
 
@@ -213,7 +229,7 @@ If the person is unlucky enough not to have any friends inside their `friends` p
 <p>Luis Gonzalez was born in 1990 and has no friends.</p>
 ```
 
-  ---
+---
 
 </details>
 
@@ -222,7 +238,7 @@ If the person is unlucky enough not to have any friends inside their `friends` p
 <details>
   <summary>Click to read</summary>
 
-  ---
+---
 
 We need to be able to tab between widgets using the Tab key, which helps make the site more accessible.
 
@@ -237,7 +253,7 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
 </div>
 ```
 
-  ---
+---
 
 </details>
 
